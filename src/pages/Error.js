@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Rooms() {
+export default function Error() {
     return (
         <div>
-            Rooms
+            Error Page
         </div>
     )
 }
