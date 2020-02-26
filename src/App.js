@@ -12,10 +12,13 @@ import { Route, Switch} from 'react-icons'
 function App() {
   return (
     <>
-    <Route path="/" component={Home}></Route>
-    <Route path="/rooms" component={Rooms}></Route>
-    <Route path="/rooms/:slug" component={SingleRoom}></Route>
-    <Error></Error>
+
+    <Switch>
+      <Route exact path="/" component={Home}></Route>
+      <Route exact path="/rooms" component={Rooms}></Route>
+      <Route exact path="/rooms/:slug" component={SingleRoom}></Route>
+      <Route component={Error}></Route>
+    </Switch>
     </>
   );
 }
